@@ -1,7 +1,7 @@
 site: Journal Jekyll Theme
 
 url: 
-baseurl: 
+baseurl: https://hee-suk-yoon.github.io/
 
 collections:
   pages:
