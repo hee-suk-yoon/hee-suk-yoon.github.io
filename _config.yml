@@ -1,6 +1,6 @@
 site: Journal Jekyll Theme
 
-url: https://hee-suk-yoon.github.io/
+url: https://hee-suk-yoon.github.io
 baseurl: 
 
 collections:
@@ -55,4 +55,3 @@ plugins:
 paginate: 6
 paginate_path: "/blog/page:num/"
   
-remote_theme: Journal
