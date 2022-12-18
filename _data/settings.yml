@@ -1,6 +1,6 @@
 basic_settings:
-  site_title: Hee Suk Yoon
-  site_tagline: Ph.D. Candidate @ KAIST<br>Georgia Institute of Technology (Georgia Tech)
+  site_title: Hee Suk Yoon (윤희석)
+  site_tagline: Ph.D. Candidate @ KAIST<br>Georgia Institute of Technology<br>(Georgia Tech)
   favicon_image: /images/avartar.png
 
 header_settings:
@@ -10,14 +10,14 @@ header_settings:
 
 menu_settings:
   menu_items:
-    - title: 'Latest'
-      url: '/'
-    - title: 'Projects'
-      url: '/projects/'
-    - title: 'About'
-      url: '/about'
-    - title: 'Contact'
-      url: '/contact'
+    #- title: 'Latest'
+    #  url: '/'
+    #- title: 'Projects'
+    #  url: '/projects/'
+    #- title: 'About'
+    #  url: '/about'
+    #- title: 'Contact'
+    #  url: '/contact'
 
 grid_settings:
   grid_spacing: 10

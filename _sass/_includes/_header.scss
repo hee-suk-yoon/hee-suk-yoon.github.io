@@ -28,7 +28,10 @@
 	}
 
 	@include mq(desktop) {
+		//position: fixed;
 		width: 25%;
+		//overflow: auto;
+		//overflow: auto;
 	}
 }
 
@@ -75,11 +78,17 @@
 }
 
 .header__content {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
 	position: relative;
 
+	h2 {text-align: center; }
+	h3 {text-align: center;}
 	@include mq(tabletl) {
 		position: absolute;
-		bottom: 0;
+		top: 0;
 		padding: 40px 40px 34px;
 	}
 
@@ -100,6 +109,10 @@
 }
 
 .header__logo__img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
 	width: 50%;
 	height: auto;
 }
@@ -123,6 +136,7 @@
 	@include mq(laptop) {
 		font-size: $sitetitle-large;
 	}
+
 }
 
 .header__tagline {
