@@ -42,21 +42,6 @@
 			<a href="https://www.linkedin.com/in/hee-suk-yoon-262935137/" class="header__email">Linkedin</a>
 		</h5>
 
-		<div class="menu">
-			<div class="menu__toggle js-menu-toggle">
-				<div class="menu__toggle__icon"><span></span></div>
-			</div>
-			<div class="menu__wrap">
-				<ul class="menu__list">
-					{% for item in site.data.settings.menu_settings.menu_items %}
-					<li class="menu__list__item">
-						<a href="{{ item.url | relative_url }}" class="menu__list__item__link">{{ item.title }}</a>
-					</li>
-					{% endfor %}
-				</ul>
-				{% include socials.html %}
-			</div>
-		</div>
 
 	</div>
 
