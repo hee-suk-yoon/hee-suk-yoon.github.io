@@ -12,12 +12,20 @@
 			<img src="{{ site.data.settings.header_settings.logo_image | relative_url }}" class="header__logo__img">
 		</a>
 		{% else %}
-		<a href="{{ site.baseurl }}/" class="header__title">
-			{{ site.data.settings.basic_settings.site_title }}
-		</a>
+		<h1>
+			<img src="{{ site.data.settings.basic_settings.favicon_image | relative_url }}" class="header__logo__img">
+		</h1>
+		
+		<h2>
+			<a href="{{ site.baseurl }}/" class="header__title">
+				{{ site.data.settings.basic_settings.site_title }}
+			</a>
+		</h2>
 		{% endif %}
 
+		<h3>
 		<p class="header__tagline">{{ site.data.settings.basic_settings.site_tagline }}</p>
+		</h3>
 
 		<div class="menu">
 			<div class="menu__toggle js-menu-toggle">
