@@ -1,4 +1,5 @@
 basic_settings:
+  footer_title: Hee Suk Yoon
   site_title: Hee Suk Yoon<br>(윤희석)
   site_tagline: Ph.D. Candidate @ KAIST<br>Georgia Institute of Technology<br>(Georgia Tech)
   favicon_image: /images/avartar.png
@@ -66,6 +67,7 @@ color_settings:
   border_color: '#dddddd'
   overlay_background_color: '#161B21'
   overlay_text_color: '#ffffff'
+  email_text_color: '#161B21'
   error_color: '#D64541'
 
 font_settings:
