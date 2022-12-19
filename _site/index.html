@@ -20,19 +20,19 @@
 
 	<!-- Page Info -->
 	<link rel="shortcut icon" href="/images/avartar.png">
-	<title>Hee Suk Yoon – Homepage</title>
-	<meta name="description" content="Journal is a stunning personal blog Jekyll theme with an image-focused design.(hello)">
+	<title>Hee Suk Yoon – </title>
+	<meta name="description" content="">
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Hee Suk Yoon – Homepage">
-	<meta name="twitter:description" content="Journal is a stunning personal blog Jekyll theme with an image-focused design.(hello)">
-	<meta name="twitter:image:src" content="http://localhost:4000/images/demo/demo-landscape.jpg">
+	<meta name="twitter:title" content="Hee Suk Yoon – ">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:image:src" content="">
 
 	<!-- Facebook OpenGraph -->
-	<meta property="og:title" content="Hee Suk Yoon – Homepage" />
-	<meta property="og:description" content="Journal is a stunning personal blog Jekyll theme with an image-focused design.(hello)" />
-	<meta property="og:image" content="http://localhost:4000/images/demo/demo-landscape.jpg" />
+	<meta property="og:title" content="Hee Suk Yoon – " />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
 
 	
 	<!-- Font Embed Code -->
@@ -71,7 +71,7 @@
 
 	<header class="header">
 
-	<div class="header-image header-image--on" style="background-image: url(/images/demo/demo-landscape.jpg);"></div>
+	<div class="header-image header-image--on" style="background-image: url();"></div>
 	<div class="header-image"></div>
 
 	<div class="header-overlay"></div>
@@ -122,39 +122,75 @@
 	
 	<div class="page">
 
-		<div class="page__content" data-page-title="Hee Suk Yoon – Homepage" data-image="/images/demo/demo-landscape.jpg">
+		<div class="page__content" data-page-title="Hee Suk Yoon – " data-image="">
 
-			<section class="blog single">
+			<section class="intro">
 
 	<div class="wrap">
 
-		
-		
-		<article class="blog-post">
-
-			<div class="blog-post__header">
-				<h2 class="blog-post__title"><a href="/blog/demo-post">Demo Post</a></h2>
-				<p class="blog-post__subtitle">30 June 2018</p>
-			</div>
-
-			
-			<a href="/blog/demo-post" class="blog-post__image" style="background-image: url(/images/demo/demo-square.jpg);"></a>
-			
-
-			<div class="blog-post__content">
-				<p>This page is a demo that shows everything you can do inside portfolio and blog posts. We've included everything you need to create engaging posts about your work, and show off your case studies in a beautiful way.</p>
-				<p><a href="/blog/demo-post" class="button">Read More</a>
-			</div>
-
-		</article>
-
-		
+		<h1></h1>
+		<p></p>
 
 	</div>
 
 </section>
 
+<section class="single">
 
+	<div class="wrap">
+
+		<section class="blog single">
+
+	<div class="wrap">
+
+		{% for post in paginator.posts %}
+		
+		<article class="blog-post">
+
+			<div class="blog-post__header">
+				<h2 class="blog-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+				<p class="blog-post__subtitle">{{ post.date | date_to_long_string }}</p>
+			</div>
+
+			{% if post.featured_image %}
+			<a href="{{ post.url | relative_url }}" class="blog-post__image" style="background-image: url({{ post.featured_image | relative_url }});"></a>
+			{% endif %}
+
+			<div class="blog-post__content">
+				<p>{{ post.excerpt }}</p>
+				<p><a href="{{ post.url | relative_url }}" class="button">Read More</a>
+			</div>
+
+		</article>
+
+		{% endfor %}
+
+	</div>
+
+</section>
+
+{% if paginator.total_pages > 1 %}
+
+<section class="pagination">
+
+	{% if paginator.previous_page %}
+	<div class="pagination__prev">
+		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>Newer Posts</span></a>
+	</div>
+	{% endif %}
+	{% if paginator.next_page %}
+	<div class="pagination__next">
+		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large"><span>Older Posts</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+	</div>
+	{% endif %}
+
+</section>
+
+{% endif %}
+
+	</div>
+
+</section>
 
 		</div>
 
