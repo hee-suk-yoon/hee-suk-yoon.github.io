@@ -257,7 +257,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages (~> 227)
-  jekyll-paginate
   jekyll-sitemap
   webrick (~> 1.7)
 
