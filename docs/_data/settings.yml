@@ -2,7 +2,7 @@ basic_settings:
   footer_title: Hee Suk Yoon
   site_title: Hee Suk Yoon
   site_tagline: Ph.D. Candidate @ KAIST<br>Georgia Institute of Technology<br>(Georgia Tech)
-  favicon_image: /images/avartar.png
+  favicon_image: /images/avartar.jpg
 
 header_settings:
   logo_image: 
@@ -142,7 +142,7 @@ font_settings:
 
 advanced_settings:
   ajax_loading: true
-  analytics_code: ""
+  analytics_code: "<!-- Google tag (gtag.js) --><script async src='https://www.googletagmanager.com/gtag/js?id=G-PCGD8891J6'></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-PCGD8891J6');</script>"
   custom_styles: ""
   header_js: ""
   footer_js: ""
